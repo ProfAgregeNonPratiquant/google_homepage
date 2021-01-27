@@ -1,0 +1,122 @@
+body {
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 0.9fr 1.2fr 0.9fr;
+    grid-template-rows: 1.06fr 4fr 3fr 1fr ;
+
+    grid-template-areas: 
+        ".       .      header"
+        ".       main   .     "
+        ".       .      .     "
+        "footer  footer footer" ;
+
+    font-family: arial;
+    font-size: small;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google {
+    width: 272px;
+    padding-bottom: 28px;
+}
+.glass {
+    width: 20px;
+    color: #9aa0a6;
+    padding: 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 584px;
+}
+
+.text-input {
+    display:flex;
+    justify-content: space-around;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 582px;
+    height: 44px;
+}
+
+.text-input:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+svg {
+    padding-left: 5px;
+}
+
+input {
+    border: none;
+    flex-grow: 0.9;
+}
+
+.langage{
+    text-decoration: none;
+    color: #1a0dab;
+}
+.langage:hover {
+    text-decoration: underline;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(128, 128, 128, 0.14);
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-family: arial;
+    font-size: 14px;
+    color: #3c4043;
+    margin: 28px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+    color:#202124;
+    font-size: small;
+    font-family: arial;
+    line-height: 28px;
+}
